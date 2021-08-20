@@ -86,3 +86,18 @@ h2{
 .market-text p{
     margin-bottom: 30px;
 }
+
+.students-testimonial{
+    padding: 30px 70px 90px;
+    width: 80%;
+    margin: auto;
+}
+
+.students-container{
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
