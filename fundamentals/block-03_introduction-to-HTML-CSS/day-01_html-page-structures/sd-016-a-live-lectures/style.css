@@ -1,5 +1,8 @@
+
+
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 p, li{
@@ -11,6 +14,7 @@ p, li{
 
 h2{
     font-size: 28px;
+    margin-bottom: 50px;
 }
 
 .title-color{
@@ -29,6 +33,7 @@ h2{
     line-height: 55px;
     font-weight: 600;
     letter-spacing: -1px;
+    margin-bottom: 30px;
 }
 
 .rounded-photo{
@@ -44,4 +49,40 @@ h2{
     line-height: 20px;
     font-weight: 700;
     text-decoration: none;
+}
+
+
+.header{
+    background-image: url('https://uploads-ssl.webflow.com/5d4c18a28620ae5d4f33af94/5d4c18a28620ae56f733b01a_hero-image.jpg');
+    background-size: cover;
+    background-position: 50% 25%;
+    padding: 60px 30px 40px;
+}
+
+.header-content{
+    max-width: 60%;
+    margin-left: 75px;
+}
+
+.header-text{
+    max-width: 80%;
+}
+
+.header-text p{
+    max-width: 80%;
+}
+
+.market{
+    padding: 50px;
+    text-align: center;
+}
+
+.market-text{
+    max-width: 60%;
+    margin: auto;
+
+}
+
+.market-text p{
+    margin-bottom: 30px;
 }
