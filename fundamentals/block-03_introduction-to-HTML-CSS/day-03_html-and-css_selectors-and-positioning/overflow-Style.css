@@ -1,0 +1,13 @@
+.img{
+    width: 500px;
+}  
+
+.cavalo-marinho{
+    color:tomato
+}
+
+.paragraph{
+    width: 80%;
+    height: 300px;
+    overflow: auto;
+}
