@@ -39,8 +39,8 @@ for (let name of names){
   // console.log(name)
 }
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let sum = 0
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let sum = 0
   
 for(let i = 0; i < numbers.length; i += 1 ){
   sum += numbers[i]
@@ -50,8 +50,18 @@ for(let i = 0; i < numbers.length; i += 1 ){
 let average = sum / numbers.length
 
 if (average > 20){
-  console.log(`valor maior que 20`)
+  // console.log(`valor maior que 20`)
 }else if (average <= 20){
-  console.log('valor menor ou igual a 20')
+  // console.log('valor menor ou igual a 20')
 }
 
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let bigNum = 0
+
+for(i = 0; i < numbers.length; i += 1){
+  if(numbers[i] > bigNum){
+    bigNum = numbers[i]
+  }
+}
+ let finish = bigNum
+ console.log(finish)
