@@ -65,18 +65,34 @@ for (let name of names){
 // let finish = bigNum
 //  console.log(finish)
 
+// let odd = 0
+
+// for(let i = 0; i < numbers.length; i += 1){
+//   if(numbers[i] % 2 !== 0){
+//     odd += 1
+//   }  
+// }
+// if(odd === 0 ){
+//   console.log('nenhum valor ímpar encontrado')
+// }else{
+//   console.log(odd)
+// }
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let odd = 0
+let minNum = numbers[0]
 
-for(let i = 0; i < numbers.length; i += 1){
-  if(numbers[i] % 2 !== 0){
-    odd += 1
-  }  
-}
-if(odd === 0 ){
-  console.log('nenhum valor ímpar encontrado')
-}else{
-  console.log(odd)
+for (let i = 1; i < numbers.length; i += 1){
+  if(numbers[i] < minNum){
+    minNum = numbers[i]
+  } 
 }
 
+console.log(minNum)
 
+let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+let divide = 0
+
+for(let i = 0; i< array.length; i+=1){
+  divide += array[i]
+  console.log(divide / 2)
+}
