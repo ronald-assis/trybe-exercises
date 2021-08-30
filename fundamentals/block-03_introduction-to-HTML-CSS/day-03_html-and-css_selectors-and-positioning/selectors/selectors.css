@@ -1,0 +1,13 @@
+h1, p, ol, ul{
+    text-align: center;
+    list-style: none;
+}
+
+
+a:hover{
+    text-decoration:none;
+    background-color: #8838FB;
+}
+a:active{
+    color: black;
+}
