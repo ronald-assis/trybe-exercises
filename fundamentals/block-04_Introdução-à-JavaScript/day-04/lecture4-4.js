@@ -11,10 +11,24 @@ let person = {
     city: 'São Paulo'
   }
 }
-
 // console.log(person.lastName)
 // console.log(person['lastName'])
+// for (key in person){
+//   console.log(key)
+// }
 
-for (key in person){
-  console.log(key)
+
+
+//FUNCTIONS
+function printGreeting(name){
+  // console.log(`Olá, ${name}`)
 }
+printGreeting('ronald')
+
+function makeGreeting(name){
+  return `E aí ${name} ? Tudo bem com você?`
+}
+
+let greeting = makeGreeting('ronald') 
+
+console.log(greeting)

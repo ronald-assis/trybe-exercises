@@ -4,18 +4,18 @@ function sum(a,b){
 
 console.log(sum(10,4))
 
+let note = 60
 
-
-function result(note){
+function result(){
   if(note <= 80){
-    note = 'congratulations you passed'
+   return note = 'congratulations you passed'
   }else if(note < 80 || note >= 60){
-    note = 'You are on our waiting list'
+    return note = 'You are on our waiting list'
   }else{
-    note = 'You failed'
+    return note = 'You failed'
   }
 
-  return note;
+
 }
 
 console.log(result(70))
