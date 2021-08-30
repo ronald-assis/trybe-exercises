@@ -32,3 +32,11 @@ function makeGreeting(name){
 let greeting = makeGreeting('ronald') 
 
 console.log(greeting)
+
+function canDrive(age){
+  if(age >= 18){
+    return true
+  }else{
+    return false
+  }
+}
