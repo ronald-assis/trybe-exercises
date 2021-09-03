@@ -36,15 +36,12 @@ function upperCase(){
   let upperCaseP = document.querySelectorAll('p')
   for ( let i = 0; i < upperCaseP.length; i += 1){
     upperCaseP[i].innerText = upperCaseP[i].innerText.toUpperCase()
-  }
   
-}
-// uppercase()
-
-let upperCaseP = document.querySelectorAll('p')
-  for ( let i = 0; i < upperCaseP.length; i += 1){
-    upperCaseP[i].innerText = upperCaseP[i].innerText.toUpperCase()
   }
+}
+upperCase()
+
+
 
 
 
