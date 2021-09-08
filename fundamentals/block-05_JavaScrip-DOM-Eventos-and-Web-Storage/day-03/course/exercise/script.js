@@ -43,9 +43,9 @@ createEveryDay()
 function friday (fryday) {
   const buttonsContainer = document.querySelector('.buttons-container')
   const button = document.createElement('button')
-  button.innerHTML = 'Feriados'
+  button.innerHTML = fryday
   button.id = 'btn-holiday'
   buttonsContainer.appendChild(button)
 }
 
-friday()
+friday('Feriados')
