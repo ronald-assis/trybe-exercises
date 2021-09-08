@@ -23,10 +23,12 @@ window.onload = function () {
       // Carro vermelho ganhou!!!
       alert('Carro VERMELHO ganhou a corrida!');
       resetCarsPosition(car1, car2);
-    }
-    if (parseInt(car2.style.marginLeft) > window.innerWidth) {
+    } else if (parseInt(car2.style.marginLeft) > window.innerWidth) {    
       alert('Carro VERDE ganhou a corrida!');
       resetCarsPosition(car1, car2);
+    } else if (parseInt(car1.style.marginLeft) === parseInt(car2.style.marginLeft)){
+      alert('Carro VERMELHO e VERDE empatou!!!')
+      resetCarsPosition()
     }
   });
 }
