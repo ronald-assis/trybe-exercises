@@ -21,9 +21,19 @@ function createEveryDay() {
   for (let i = 0; i < dezDaysList.length; i += 1){
     const numDay = dezDaysList[i]
     const numDayList = document.createElement('li')
-    numDayList.classList.add('day')
-    numDayList.innerHTML = numDay
 
+    if (numDay === 24 || numDay === 31){
+      numDayList.classList.add('day', 'holiday')
+      
+    } else if (numDay === 4 || numDay === 11 ||numDay === 18){
+      numDayList.classList.add('day', 'friday')
+    } else if ( numDay === 25) {
+      numDayList.classList.add('day', 'holiday', 'friday')
+    } else {
+      numDayList.classList.add('day')
+    }
+    
+    numDayList.innerHTML = numDay
     classDays.appendChild(numDayList)
   }
 }
