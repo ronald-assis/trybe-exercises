@@ -67,3 +67,12 @@ function receiveClickHoliday(){
 
 clickHoliday.addEventListener('click', receiveClickHoliday)
 
+function friday(friday){
+  const buttonsContainer = document.querySelector('.buttons-container')
+  const buttonFriday = document.createElement('button')
+  buttonFriday.innerHTML = friday
+  buttonFriday.id = 'btn-friday'
+  buttonsContainer.appendChild(buttonFriday)
+}
+
+friday('Sexta-feira')
