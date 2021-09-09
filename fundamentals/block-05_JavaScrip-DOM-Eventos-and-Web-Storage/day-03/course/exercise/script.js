@@ -67,7 +67,7 @@ function receiveClickHoliday(){
 
 clickHoliday.addEventListener('click', receiveClickHoliday)
 
-function friday(friday){
+function fridayButton(friday){
   const buttonsContainer = document.querySelector('.buttons-container')
   const buttonFriday = document.createElement('button')
   buttonFriday.innerHTML = friday
@@ -75,4 +75,23 @@ function friday(friday){
   buttonsContainer.appendChild(buttonFriday)
 }
 
-friday('Sexta-feira')
+fridayButton('Sexta-feira')
+
+const clickFriday = document.querySelector('#btn-friday')
+function friday(fridays) {
+  const classFriday = document.querySelectorAll('.friday')
+  const sextou = 'SEXTOU!!!'
+
+  clickFriday.addEventListener('click', () => {
+    for (let i = 0; i < classFriday.length; i += 1) {
+      if (classFriday[i].innerHTML !== sextou){
+        classFriday[i].innerHTML = sextou
+      } else {
+        classFriday[i].innerHTML = fridays[i]
+      }
+    }
+  })
+}
+const daysFromFriday = [4, 11, 18, 25]
+friday(daysFromFriday)
+
