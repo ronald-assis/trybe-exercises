@@ -49,3 +49,21 @@ function friday (fryday) {
 }
 
 friday('Feriados')
+
+
+const clickHoliday = document.querySelector('#btn-holiday')
+function receiveClickHoliday(){
+  const classHoliday = document.querySelectorAll('.holiday')
+  const backgroundColor = 'rgb(238,238,238)'
+  const newColor = 'rgb(135,224,232)'
+  
+  for (let i = 0; i < classHoliday.length; i+=1) {
+    if(classHoliday[i].style.backgroundColor === newColor){
+      classHoliday[i].style.backgroundColor = backgroundColor
+      } else {
+        classHoliday[i].style.backgroundColor = newColor
+      }
+    }
+  }
+  
+clickHoliday.addEventListener('click', receiveClickHoliday)
