@@ -40,30 +40,32 @@ function createEveryDay() {
 
 createEveryDay()
 
-function friday (fryday) {
+function holiday (holiday) {
   const buttonsContainer = document.querySelector('.buttons-container')
   const button = document.createElement('button')
-  button.innerHTML = fryday
+  button.innerHTML = holiday
   button.id = 'btn-holiday'
   buttonsContainer.appendChild(button)
 }
 
-friday('Feriados')
+holiday('Feriados')
 
 
-const clickHoliday = document.querySelector('#btn-holiday')
 function receiveClickHoliday(){
+  const clickHoliday = document.querySelector('#btn-holiday')
   const classHoliday = document.querySelectorAll('.holiday')
   const backgroundColor = 'rgb(238,238,238)'
-  const newColor = 'rgb(135,224,232)'
+  const newColor = 'aqua'
   
-  for (let i = 0; i < classHoliday.length; i+=1) {
-    if(classHoliday[i].style.backgroundColor === newColor){
-      classHoliday[i].style.backgroundColor = backgroundColor
-      } else {
-        classHoliday[i].style.backgroundColor = newColor
+  clickHoliday.addEventListener('click', () => {
+    for (let i = 0; i < classHoliday.length; i+=1) {
+      if(classHoliday[i].style.backgroundColor === newColor){
+        classHoliday[i].style.backgroundColor = backgroundColor
+        } else {
+          classHoliday[i].style.backgroundColor = newColor
+        }
       }
-    }
-  }
-  
-clickHoliday.addEventListener('click', receiveClickHoliday)
+  })
+}
+
+receiveClickHoliday()
