@@ -50,22 +50,20 @@ function holiday (holiday) {
 
 holiday('Feriados')
 
-
+const clickHoliday = document.querySelector('#btn-holiday')
 function receiveClickHoliday(){
-  const clickHoliday = document.querySelector('#btn-holiday')
   const classHoliday = document.querySelectorAll('.holiday')
   const backgroundColor = 'rgb(238,238,238)'
   const newColor = 'aqua'
   
-  clickHoliday.addEventListener('click', () => {
-    for (let i = 0; i < classHoliday.length; i+=1) {
-      if(classHoliday[i].style.backgroundColor === newColor){
-        classHoliday[i].style.backgroundColor = backgroundColor
-        } else {
-          classHoliday[i].style.backgroundColor = newColor
-        }
-      }
-  })
+  for (let i = 0; i < classHoliday.length; i+=1) {
+    if(classHoliday[i].style.backgroundColor === newColor){
+      classHoliday[i].style.backgroundColor = backgroundColor
+    } else {
+      classHoliday[i].style.backgroundColor = newColor
+    }
+  }
 }
 
-receiveClickHoliday()
+clickHoliday.addEventListener('click', receiveClickHoliday)
+
