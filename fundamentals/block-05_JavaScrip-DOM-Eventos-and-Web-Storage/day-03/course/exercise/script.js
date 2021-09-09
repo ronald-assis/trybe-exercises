@@ -95,3 +95,20 @@ function friday(fridays) {
 const daysFromFriday = [4, 11, 18, 25]
 friday(daysFromFriday)
 
+function mouseOverOut() {
+  const days = document.querySelectorAll('.day')
+
+  for (let i = 0; i < days.length; i += 1){
+    days[i].addEventListener('mouseover', (evt) => {
+      evt.target.style.fontSize = '40px'
+      evt.target.style.fontWeight = '600'
+    })
+    
+    days[i].addEventListener('mouseout', (evt) => {
+      evt.target.style.fontWeight = '200'
+      evt.target.style.fontSize = '20px'
+    })
+  }
+}
+
+mouseOverOut()
