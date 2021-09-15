@@ -4,11 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Resume</title>
 </head>
 <body>
-  <header class="header-resume">
-    <h1>Currículo</h1>
+  <header class="resume-from-hearder">
+    <h1>Ficha de cadastro de Currículo</h1>
+    <p>Todos os requisitos são obrigatorios</p>
   </header>
+  <main class="content-main">
+    <fieldset>
+      <legend>Ficha de cadastro</legend>
+      <div class="line-content">
+        <label for="full-name">Nome:</label>
+        <input type="text" name="full-name" maxlength="40" id="full-name" required>
+      </div>
+      <div class="line-content">
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email" maxlength="50" required>
+      </div>
+      <div class="line-content">
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" required placeholder="Digíte seu CPF no formato: XXX.XXX.XXX-XX">
+      </div>
+    </fieldset>
+  </main>
 </body>
 </html>
