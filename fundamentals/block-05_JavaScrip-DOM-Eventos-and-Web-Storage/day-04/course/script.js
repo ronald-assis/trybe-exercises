@@ -51,3 +51,59 @@ window.onload = () => {
 
 
 }
+
+
+
+
+
+
+function saveTasks() {
+  const list = document.querySelectorAll('li');
+  const buttonSave = document.querySelector;('#salvar-tarefas');
+  for (let i = 0; i < list.length; i += 1) {
+    list[i].innerText;
+  }
+  localStorage.setItem('Tasks', JSON.stringify(list));
+}
+
+function save() {
+  const buttonSave = document.querySelector;('#salvar-tarefas');
+  buttonSave.addEventListener('click', saveTasks);
+}
+
+save()
+
+
+
+
+
+
+
+
+
+
+  // window.localStorage.tasks = list.innerHTML
+
+
+  function printList() {
+    if (JSON.stringify(localStorage.getItem('Tasks'))  !== null) {
+    const ol = document.querySelectorAll('#lista-tarefas');
+    ol = JSON.stringify(localStorage.getItem('Tasks'))
+    const lista = ol.children
+      for (let i = 0; i < ol.length; i++) {
+        lista[i] = completeTask()
+        
+      }
+  
+    }
+  }
+
+
+
+
+
+window.onload = () => {
+  const list = document.querySelectorAll('li');
+  const tasks = document.querySelector('#lista-tarefas');
+    tasks.innerHTML = window.localStorage.list === undefined ? '' : window.localStorage.list
+  }
