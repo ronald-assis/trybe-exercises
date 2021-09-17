@@ -43,3 +43,7 @@ fieldset {
   padding: 7px;
   font-size: 14px;
 }
+
+.line-content input[type='radio'] {
+  width:  17px;
+}
