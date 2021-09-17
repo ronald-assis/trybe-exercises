@@ -1,49 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: rgb(246,247,248);
-  color: #5d6063;
-  font-size: 16px;
+  color: rgb(93, 96, 99);
   line-height: 1.3;
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial', 'Sans-serif';
 }
 
-.resume-from-hearder, fieldset {
-  background-color: #EBEBEB;
-  border: 1px solid #d6d9dc;
+form {
+  margin: 10px 50px
+}
+
+.error {
+  border: 4px solid red;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.form-header {
+  text-align: center;
+  background-color: rgb(246, 247, 248);
+  border: 1px solid rgb(214, 217, 220);
   border-radius: 3px;
-  /* text-align: center; */
-  width:  80%;
-  margin: 40px auto;
+  margin: 40px 50px;
   padding: 50px;
 }
 
-.resume-from-hearder h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
 fieldset {
-  margin: 0 auto 40px;
+  margin: 0 0 15px;
 }
 
 .line-content {
-  margin: 20px;
-  border: 0;
+  margin: 12px;
 }
 
-.line-content input {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(214, 217, 220);
-  border-radius: 3px;
-  width:  100%;
-  padding: 7px;
-  font-size: 14px;
+.button {
+  width: 200px;
+  text-align: center;
 }
 
-.line-content input[type='radio'] {
-  width:  17px;
+.data {
+  padding: 15px;
+  border: 1px solid black;
+  margin-bottom: 15px;
 }
