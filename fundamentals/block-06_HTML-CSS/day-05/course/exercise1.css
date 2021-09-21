@@ -28,7 +28,7 @@ figure {
   text-align: center;
 }
 
-@media screen and (min-width: 794px) {
+@media (min-width: 794px) {
   body {
     background: rgba(0,0,255,.2);
     margin: 25px 6%;
@@ -41,7 +41,7 @@ figure {
   }
 }
 
-@media screen and (min-width: 1020px) {
+@media (min-width: 1020px) {
   body {
     background: rgba(0,255,0,.2);
     margin: 25px 10%;
