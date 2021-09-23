@@ -9,10 +9,10 @@ const testingScope = escopo => {
   if (escopo === true) {
     let ifScope = `Não devo ser utilizada fora do meu escopo (if)`
     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`
-    console.log(ifScope)
+    
   } else {
     const elseScope = `Não devo ser utilizada fora meu escopo (else)`
-    console.log(elseScope)
+    
   }
 }
 // function testingScope(escopo) {
@@ -29,3 +29,15 @@ const testingScope = escopo => {
 
 testingScope(true);
 
+
+// Utilize template literals para que a chamada console.log(<seu código>oddsAndEvens<seu código>); retorne "Os números 2,3,4,7,10,13 se encontram ordenados de forma crescente!". 
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const crescente = (array) => {
+  const sortOddsAndEvens = array.sort((a, b) => a - b)
+  return sortOddsAndEvens
+}
+
+const sortedArray = crescente(oddsAndEvens);
+console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente !`);
