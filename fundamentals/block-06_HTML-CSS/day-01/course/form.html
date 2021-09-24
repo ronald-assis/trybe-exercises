@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Resume</title>
+</head>
+
+<body>
+  <header class="resume-from-hearder">
+    <h1>Ficha de cadastro de Currículo</h1>
+    <p>Todos os requisitos são obrigatorios</p>
+  </header>
+  <main class="content-main">
+    
+    <form id="cv-form">
+      <fieldset>
+        <legend>Ficha de cadastro</legend>
+        <div class="line-content">
+          <label for="full-name">Nome:</label>
+          <input type="text" name="fullName" maxlength="40" id="full-name" required>
+        </div>
+        <div class="line-content">
+          <label for="">Email:</label>
+          <input type="email" name="email" id="email" maxlength="50" required>
+        </div>
+        <div class="line-content">
+          <label for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" maxlength="11" required
+            placeholder="Digíte seu CPF no formato: XXX.XXX.XXX-XX">
+        </div>
+
+        <div class="line-content">
+          <label for="address">Endereço: </label>
+          <input type="text" name="address" maxlength="200" id="address" required>
+        </div>
+
+        <div class="line-content">
+          <label for="city">Cidade: </label>
+          <input type="text" name="city" id="city" maxlength="28" required>
+        </div>
+
+        <div class="line-content">
+          <label for="state">Estado: </label>
+          <select name="state" id="state" required>
+            <option selected value="">Selecione seu estado</option>
+          </select>
+        </div>
+        <div class="form-rom">
+          <div class="line-content">
+            <label for="complement">Complemento: </label><br>
+            <input type="radio" name="complement" value="house" id="complement">
+            <span>Casa</span>
+            <input type="radio" name="complement" value="apartment" id="complement">
+            <span>Apartamento</span>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados do seu último emprego</legend>
+
+        <div class="line-content">
+          <label for="curriculo">Resumo do currículo: </label>
+          <textarea name="resume" id="curriculo" maxlength="1000" cols="30" rows="10" required
+            placeholder="Resumo do currículo"></textarea>
+        </div>
+
+        <div class="line-content">
+          <label for="role">Cargo:</label>
+          <input type="text" name="cargo" id="role" maxlength="40" required>
+        </div>
+
+        <div class="line-content">
+          <label for="job-description">Descrição do cargo: </label>
+          <input type="text" name="jobDescription" id="job-description" maxlength="500" required>
+        </div>
+
+        <div class="line-content">
+          <label for="start-date">Date de inicio:</label>
+          <input type="date" name="startDate" id="starte-date" required>
+        </div>
+      </fieldset>
+      <button class="submit-button" >enviar</button>
+      <button class="clear-button" type="reset">limpar</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

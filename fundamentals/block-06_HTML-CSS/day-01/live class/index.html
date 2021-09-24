@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Submeter Palestra</title>
+</head>
+<body>
+  <header class="speaker-from-header">
+    <h1>Submeter Palestra</h1>
+    <p>Quer palestrar na nossa conferencia? Preencha o formulario!</p>
+  </header>
+
+  <main>
+    <form action="" method="get" class="speaker-form">
+      <div class="form-rom">
+        <div class="line-content">
+          <label for="full-name">Name:</label>
+          <input type="text" name="full-name" id="full-name">
+        </div>
+      </div>
+
+      <div class="line-content">
+        <fieldset class="legacy-form-rom">
+          <legend>Tipo de Palestra</legend>
+          <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
+          <label for="talk-type-1">Palco principal</label>
+          <input type="radio" name="talk-type" id="talk-type-2">
+          <label for="talk-type-2">Workshop</label>
+        </fieldset>
+      </div>
+
+      <div class="line-content">
+        <label for="t-shit-size">Tamanho da camisa:</label>
+        <select name="" id="t-shit-size">
+          <option value="P">Pequeno</option>
+          <option value="M">Médio</option>
+          <option value="G">Grande</option>
+        </select>
+      </div>
+
+      <div class="line-content">
+        <label for="">Resumo da Palestra:</label>
+        <textarea name="abstract" id="abstract" placeholder="Explique o conteúdo da sua palestra" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="line-content">
+        <input type="checkbox" name="available" id="available" value="is_available">
+        <label for="available">Confirmo que estou disponivel na data do evento.</label>
+      </div>
+
+      <div class="line-content">
+        <button type="submit">Enviar</button>
+      </div>
+
+    </form>
+  </main>
+
+</body>
+</html>
