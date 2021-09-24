@@ -9,10 +9,10 @@ const testingScope = escopo => {
   if (escopo === true) {
     let ifScope = `Não devo ser utilizada fora do meu escopo (if)`
     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`
-    
+
   } else {
     const elseScope = `Não devo ser utilizada fora meu escopo (else)`
-    
+
   }
 }
 // function testingScope(escopo) {
@@ -40,4 +40,90 @@ const crescente = (array) => {
 }
 
 const sortedArray = crescente(oddsAndEvens);
-console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente !`);
+// console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente !`);
+
+
+/*
+    Crie uma função que receba um número e retorne seu fatorial.
+
+    Na matemática, o fatorial de um número não negativo N , com a notação N! , é o produto de todos os inteiros menores ou iguais a N . Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
+
+*/
+const factorial = (number) => {
+  let result = 1
+  for (let i = 2; i <= number; i += 1) {
+    result *= i;
+  }
+  return result
+}
+
+// console.log(factorial(4))
+
+// Crie uma função que receba uma frase e retorne qual a maior palavra. 
+
+const longestWord = (text) => {
+  let wordArray = text.split(' ')
+  let maxLength = 0
+  let result = ''
+
+  for (let word of wordArray) {
+    if (word.length > maxLength) {
+      maxLength = word.length
+      result = word
+    }
+  }
+  return result
+}
+
+console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"));
+
+/*
+    Um botão ao qual será associado um event listener ;
+    Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+    Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
+
+    Crie um código JavaScript com a seguinte especificação:
+
+*/
+
+let clickCount = 0;
+let textToDisplay = document.querySelector("#text");
+
+const button = document.querySelector("#button_test")
+button.addEventListener('click', () => textToDisplay.innerHTML = clickCount += 1)
+
+/*
+  Função 1 : Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string .
+  Exemplo:
+
+  String determinada: "Tryber x aqui!"
+  Parâmetro: "Bebeto"
+  Retorno: "Tryber Bebeto aqui!"
+
+*/
+
+const array = ['HTML', 'CSS', 'JS', 'React', 'Node.js']
+
+function buildSkillsPhrase(paramOne) {
+  const arrayString = (x) => `Tryber ${x} aqui! 
+  
+  Tudo Bem?`
+  
+  let result = `${arrayString(paramOne)}
+  
+  Minhas cinco principais habilidades são:`
+
+  array.forEach((skill, index) => result = `${result}
+  
+  - ${skill}`)
+
+  result = `
+  ${result}
+  
+  #goTrybe
+  `
+  return result
+}
+
+
+console.log(buildSkillsPhrase('ronald'))
