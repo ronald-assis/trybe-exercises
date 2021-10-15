@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 9.1</title>
+    <style>
+      .square {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        transition: 2s;
+      }
+
+      .square:hover {
+        height: 400px;
+        width: 400px;
+        background-color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="square"></div>
+    <script>
+      const fun1 = (callback) => {
+        setTimeout(() => {
+          console.log('Função 1');
+          callback();
+        }, Math.random() * 2000);
+      };
+      const fun2 = () => {
+        setTimeout(() => {
+          console.log('Função 2');
+        }, Math.random() * 2000);
+      };
+
+      console.log('Antes de chamar as funções');
+
+      fun1(fun2);
+
+      console.log('Depois de chamar as funções');
+    </script>
+  </body>
+
+</html>
