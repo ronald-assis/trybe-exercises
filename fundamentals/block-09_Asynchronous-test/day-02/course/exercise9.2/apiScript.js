@@ -12,13 +12,13 @@ const extractJoke = (joke) => {
   }
 }
 
-const fetchJoke = () => {
+const fetchJoke = async () => {
   const myObject = {
     method: 'GET',
     headers: { 'Accept': 'application/json' },
   }
   
-  fetch(API_URL, myObject)
+  await fetch(API_URL, myObject)
     .then((response) => response.json())
     .then((data) => {
       // Poderia fazer direto tbm!
