@@ -1,4 +1,5 @@
-const books = [
+const books = {
+  screen:[
   {
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
@@ -59,7 +60,7 @@ const books = [
     },
     releaseYear: 1928,
   },
-];
+]};
 
 // Adicione o código do exercício aqui:
 // 1- Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
