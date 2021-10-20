@@ -50,9 +50,10 @@ function fetchPokemon(pokemonName) {
     .catch((error) => console.log(error));
 }
 
-function fetchPokemonData(pokemonName) {
-  return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-    .then((response) => response.json());
+async function fetchPokemonData(pokemonName) {
+  const pokemons = await (await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`))
+  return pokemons.json()
+    // .then((response) => response.json());
 }
 
 function requestOrederedPokemons() {
