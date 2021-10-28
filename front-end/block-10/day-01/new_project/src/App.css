@@ -1,0 +1,16 @@
+.header {
+  background-color: #0FA36B;
+  color: #ffffff;
+  padding: 12px;
+}
+
+.card {
+  border: 2px solid tomato;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #0FA36B;
+  color: #ffffff;
+  padding: 12px;
+}
